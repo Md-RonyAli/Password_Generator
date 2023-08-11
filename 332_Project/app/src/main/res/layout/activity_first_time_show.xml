@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2FFFFFF"
+    tools:context=".first_time_show">
+
+    <TextView
+        android:id="@+id/emailview"
+        android:layout_width="249dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginBottom="117dp"
+        android:background="@null"
+
+        android:text="Trusted and Secure"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="292dp"
+
+        android:layout_height="66dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="25dp"
+        android:background="@null"
+        android:text="Your vault is protected with world-class security. It's secure, not even we can access your passwords."
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/signup_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="163dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/round_btn"
+        android:backgroundTint="#DC0723"
+        android:text="SIGN UP"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/login_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="165dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="54dp"
+        android:background="@drawable/round_btn"
+        android:text="LOG IN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_btn" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="203dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="117dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailview"
+        app:srcCompat="@drawable/vault" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

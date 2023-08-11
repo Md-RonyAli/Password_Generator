@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.savepass.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.savepass.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.savepass.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_pass2"
+        android:name="com.example.savepass.Password_new"
+        android:label="Passwords"
+        tools:layout="@layout/fragment_password_new" />
+
+    <fragment
+        android:id="@+id/nav_notes2"
+        android:name="com.example.savepass.Notes_new"
+        android:label="Secure Notes"
+        tools:layout="@layout/fragment_notes_new" />
+    <fragment
+        android:id="@+id/nav_address2"
+        android:name="com.example.savepass.Address_new"
+        android:label="Addresses"
+        tools:layout="@layout/fragment_address_new" />
+    <activity
+        android:id="@+id/nav_aboutus2"
+        android:name="com.example.savepass.about_us"
+        tools:layout="@layout/activity_about_us" />
+    <fragment
+        android:id="@+id/nav_share2"
+        android:name="com.example.savepass.Share"
+        android:label="Share"
+        tools:layout="@layout/fragment_share" />
+    <activity
+        android:id="@+id/nav_setting2"
+        android:name="com.example.savepass.setting_page"
+        tools:layout="@layout/activity_setting_page" />
+</navigation>

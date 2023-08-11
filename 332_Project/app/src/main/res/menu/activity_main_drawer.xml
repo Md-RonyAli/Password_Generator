@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        android:id="@+id/group1">
+        <item android:id="@+id/nav_pass2"
+            android:icon="@drawable/pass_key"
+            android:title="Password">
+        </item>
+        <item android:id="@+id/nav_notes2"
+            android:icon="@drawable/ic_baseline_notes_24"
+            android:title="Secure Notes">
+        </item>
+        <item android:id="@+id/nav_address2"
+            android:icon="@drawable/address"
+            android:title="Address">
+        </item>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item android:id="@+id/nav_aboutus2"
+            android:icon="@drawable/about_us"
+            android:title="About">
+        </item>
+        <item android:id="@+id/nav_share2"
+            android:icon="@drawable/ic_baseline_share_24"
+            android:title="Share">
+        </item>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group3">
+        <item android:id="@+id/nav_setting2"
+            android:icon="@drawable/setting"
+            android:title="Settings">
+        </item>
+    </group>
+</menu>
